@@ -18,9 +18,7 @@ export const metadata: Metadata = {
   description: "Create changelogs for your software using Voidfull.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<PropsWithChildren>) {
+export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" dir="ltr">
       <body
