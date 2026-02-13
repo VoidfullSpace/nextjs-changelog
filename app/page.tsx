@@ -1,5 +1,6 @@
 import { PostItem } from "./components/PostItem";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 const updates = [
   {
@@ -69,6 +70,8 @@ export default function Home() {
         ))}
       </div>
     </main>
+
+    <Footer />
     </>
   );
 }
