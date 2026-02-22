@@ -1,5 +1,4 @@
 import { PostItem } from "./components/PostItem";
-import { Header } from "./components/Header";
 
 const updates = [
   {
@@ -52,9 +51,6 @@ const updates = [
 
 export default function Home() {
   return (
-    <>
-    <Header />
-
     <main className="mt-12 max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
       <h2 className="text-3xl font-semibold mb-2 text-gray-700">
         Product Updates
@@ -69,6 +65,5 @@ export default function Home() {
         ))}
       </div>
     </main>
-    </>
   );
 }
