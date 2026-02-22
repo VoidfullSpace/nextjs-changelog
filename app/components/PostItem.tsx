@@ -21,18 +21,19 @@ interface PostItemProps {
 export function PostItem({ update }: PostItemProps) {
   return (
     <div className="grid sm:grid-cols-[120px_40px_1fr] md:grid-cols-[220px_40px_1fr] gap-4 mb-16">
-
       {/* { date & tags } */}
       <div className="flex flex-col text-xs sm:text-right mb-6">
         <p className=" text-gray-500 mb-3 font-bold mt-3">{update.date}</p>
         <div className="flex flex-wrap sm:justify-end gap-1">
           {update.tags.map((tag) => (
-            <div key={tag.label} className="inline-flex items-center gap-1 px-2 py-1 bg-white rounded-full text-xs text-gray-500">
-              <span
-                className={`w-2 h-2 rounded-full ${tag.color}`}
-              >
+            <div
+              key={tag.label}
+              className="inline-flex items-center gap-1 px-2 py-1 bg-white rounded-full text-xs text-gray-500"
+            >
+              <span className={`w-2 h-2 rounded-full ${tag.color}`}></span>
+              <span className="whitespace-nowrap w-fit font-semibold">
+                {tag.label}
               </span>
-              <span className="whitespace-nowrap w-fit font-semibold">{tag.label}</span>
             </div>
           ))}
         </div>
@@ -66,9 +67,7 @@ export function PostItem({ update }: PostItemProps) {
             />
           </div>
         </div>
-
       </div>
-
     </div>
   );
 }

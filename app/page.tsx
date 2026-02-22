@@ -51,8 +51,7 @@ const updates = [
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-16 bg-gray-100">
-      {/* Header */}
+    <main className="mt-12 max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
       <h2 className="text-3xl font-semibold mb-2 text-gray-700">
         Product Updates
       </h2>
