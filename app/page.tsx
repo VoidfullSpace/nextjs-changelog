@@ -1,5 +1,6 @@
 import { PostItem } from "./components/PostItem";
 import { Header } from "./components/Header";
+import { Root } from "./components/voidfull/Root";
 
 const updates = [
   {
@@ -53,22 +54,26 @@ const updates = [
 export default function Home() {
   return (
     <>
-    <Header />
+      <Header />
 
-    <main className="mt-12 max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
-      <h2 className="text-3xl font-semibold mb-2 text-gray-700">
-        Product Updates
-      </h2>
-      <p className="text-gray-500 mb-16">
-        Stay up to date with new features, improvements, and bug fixes shipped.
-      </p>
+      <main className="mt-12 max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
+        <h2 className="text-3xl font-semibold mb-2 text-gray-700">
+          Product Updates
+        </h2>
+        <p className="text-gray-500 mb-16">
+          Stay up to date with new features, improvements, and bug fixes
+          shipped.
+        </p>
 
-      <div>
-        {updates.map((update) => (
-          <PostItem key={update.title} update={update} />
-        ))}
-      </div>
-    </main>
+        <section className="my-10">
+          <Root />
+        </section>
+        <div>
+          {updates.map((update) => (
+            <PostItem key={update.title} update={update} />
+          ))}
+        </div>
+      </main>
     </>
   );
 }
