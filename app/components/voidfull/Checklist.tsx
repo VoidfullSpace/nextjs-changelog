@@ -45,7 +45,7 @@ function Variables() {
               "flex min-w-0 flex-1 justify-between space-x-4 pt-1.5",
             )}
           >
-            <p>
+            <p className="break-all">
               You need to add <code>NEXT_PUBLIC_VOIDFULL_CONTENT_TOKEN</code>
               {" and "}
               <code>NEXT_PUBLIC_VOIDFULL_SITE_ID</code> variables.
