@@ -51,7 +51,7 @@ const updates = [
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-16 bg-gray-100">
+    <main className="w-full px-12 py-16 bg-gray-100">
       {/* Header */}
       <h2 className="text-3xl font-semibold mb-2 text-gray-700">
         Product Updates
