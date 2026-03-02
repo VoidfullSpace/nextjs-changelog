@@ -61,8 +61,12 @@ export default function Home() {
       </p>
 
       <div>
-        {updates.map((update) => (
-          <PostItem key={update.title} update={update} />
+        {updates.map((update, i) => (
+          <PostItem
+            key={update.title}
+            update={update}
+            isLast={i === updates.length - 1}
+          />
         ))}
       </div>
     </main>
